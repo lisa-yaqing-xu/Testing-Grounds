@@ -1,3 +1,6 @@
+/*
+    reverse string inside parenthesis, then also remove parenthesis
+ */
 function reverseParens(str){
     let closingStack = [];
     let origLength = str.length;
@@ -34,7 +37,6 @@ function reverseParens(str){
 
 (function(){
     console.log(reverseParens('ab(cd(ef)g(hi)jk)12345'));
-    //cdfegihjk
     //abkjhigefdc12345
 
 })();
