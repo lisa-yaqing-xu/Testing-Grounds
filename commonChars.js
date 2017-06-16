@@ -17,8 +17,7 @@ function getCharNumMap(str) {
     let splitStr = str.split('');
 
     for (let i = 0; i < splitStr.length; i++) {
-        if (strCount[splitStr[i]] == null) strCount[splitStr[i]] = 0;
-        strCount[splitStr[i]]++;
+        strCount[splitStr[i]] = strCount[splitStr[i]]+1 || 1;
     }
 
     return strCount;
